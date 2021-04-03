@@ -79,11 +79,13 @@ img {
 
 .link:hover,
 .link:focus {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--hover-color);
 }
 
 .button:hover,
 .button:focus {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--button-hover-color);
 }
 
@@ -156,8 +158,19 @@ img {
   color: var(--hover-color);
 }
 
+/* .curent::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: auto;
+  height: 4px;
+  border-radius: 2px;
+  background-color: currentColor;
+} */
+
 /* .curent:hover,
 .curent:focus {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--title-color);
 } */
 
@@ -167,6 +180,10 @@ img {
 
 .menu {
   display: inline-flex;
+}
+
+.menu-item {
+  position: relative;
 }
 
 .menu .link {
@@ -310,9 +327,23 @@ img {
 }
 
 .images-item {
+  position: relative;
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc((100% - 3 * 30px) / 3);
+}
+
+.label {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  bottom: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 27px 0;
+  text-align: center;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--title-second-color);
 }
 
 .work {
@@ -421,11 +452,13 @@ img {
 
 .partners-link:hover,
 .partners-link:focus {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border-color: currentColor;
 }
 
 .partners-link:hover .icon,
 .partners-link:focus .icon {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: currentColor;
 }
 
@@ -551,12 +584,14 @@ img {
 
 .curent-button:hover,
 .curent-button:focus {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--title-color);
   background-color: var(--color-button-portfolio);
 } */
 
 .list-button:hover,
 .list-button:focus {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--hover-color);
   color: var(--title-second-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -571,6 +606,7 @@ img {
 }
 
 .box {
+  position: relative;
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc((100% - 3 * 30px) / 3);
@@ -579,8 +615,23 @@ img {
   box-sizing: border-box;
 }
 
+.box::before {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+}
+
+.box:hover::before {
+  opacity: 1;
+}
+
 .box:hover,
 .box:focus {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
