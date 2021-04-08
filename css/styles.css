@@ -16,6 +16,10 @@
   --color-social-icons: #afb1b8;
 }
 
+/* transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   */
+
 html {
   box-sizing: border-box;
 }
@@ -75,19 +79,19 @@ img {
   padding-top: 15px;
   padding-bottom: 15px;
   align-items: center;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 
 .link:hover,
 .link:focus {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--hover-color);
 }
 
 .button:hover,
 .button:focus {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--button-hover-color);
 }
 
@@ -181,7 +185,6 @@ img {
 
 /* .curent:hover,
 .curent:focus {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--title-color);
 } */
 
@@ -265,6 +268,10 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0px;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
 }
 
 .backdrop.is-hidden {
@@ -280,6 +287,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  transition: 250ms ease-out 250ms;
 }
 
 .modal {
@@ -467,12 +475,19 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: var(--title-second-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
 }
 
 .social-icons .icon {
   width: 20px;
   height: 20px;
   fill: var(--color-social-icons);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
 }
 
 .clients {
@@ -506,23 +521,30 @@ img {
   /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
   background-repeat: no-repeat;
   background-position: center;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 
 .logo-clients .icon {
   fill: var(--color-social-icons);
+  transition: 2500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
 }
 
 .partners-link:hover,
 .partners-link:focus {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border-color: currentColor;
 }
 
 .partners-link:hover .icon,
 .partners-link:focus .icon {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: currentColor;
 }
 
@@ -555,15 +577,11 @@ img {
 
 .social-icons-link:hover,
 .social-icons-link:focus {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--hover-color);
 }
 
 .social-icons-link:hover .icon,
 .social-icons-link:focus .icon {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--title-second-color);
 }
 
@@ -647,6 +665,10 @@ img {
   background-color: var(--color-button-portfolio);
   border-radius: 4px;
   border: 0px;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, color;
 }
 
 /* .curent-button {
@@ -656,15 +678,12 @@ img {
 
 .curent-button:hover,
 .curent-button:focus {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--title-color);
   background-color: var(--color-button-portfolio);
 } */
 
 .list-button:hover,
 .list-button:focus {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--hover-color);
   color: var(--title-second-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -685,18 +704,18 @@ img {
 
   background-color: var(--title-second-color);
   box-sizing: border-box;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: box-shadow;
 }
 
 .box:hover,
 .box:focus {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .box:hover .link {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: inherit;
 }
 
@@ -719,13 +738,15 @@ img {
   font-size: 18px;
   line-height: 1.56;
   color: var(--title-second-color);
+
+  transition: 250ms ease-in-out;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, color;
 }
 
 .box:hover .img-content {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(0);
-  transition: 250ms ease;
+  transition: 250ms ease-in-out;
 }
 
 .title-card {
