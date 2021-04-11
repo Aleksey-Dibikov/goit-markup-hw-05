@@ -524,7 +524,7 @@ img {
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
+  transition-property: border-color;
 }
 
 .logo-clients .icon {
@@ -668,7 +668,7 @@ img {
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color, color;
+  transition-property: background-color, color, box-shadow;
 }
 
 /* .curent-button {
